@@ -1,0 +1,86 @@
+.welcome{
+    display: flex
+    
+    
+}
+.welcome img {
+    width: 50%;
+    margin-left: 2%;
+    margin-top: 50px;
+    height: 80%;
+    
+}
+.auth h1{
+    font-family: times, Times New Roman, times-roman, georgia, serif;
+    color: #444;
+    margin: 0;
+    padding: 20px;
+    font-size: 51px;
+    line-height: 44px;
+    letter-spacing: -2px;
+    font-weight: bold;
+}
+
+.welcome .auth{
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 90px
+    
+}
+.social{
+
+}
+.social h3 {
+    font-style: normal;
+    font-family: cursive;
+
+
+}
+.registerForm{
+    background-color: red;
+}
+#fb{
+    height: 70px;
+    width: 195px;
+}
+#fb:hover {
+    cursor: pointer;
+}
+#google{
+    height: 77px;
+    width: 195px;
+    background-color: dodgerblue;
+}
+#google:hover{
+    cursor: pointer;
+}
+.socButtons{
+
+}
+
+.marker img {
+    height: 50px;
+    width:50px
+}
+
+.marker img:hover{
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.2);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 200ms ease-in;
+    transform: scale(1.2);
+    content:url("http://www.iconsdb.com/icons/preview/red/map-marker-2-xxl.png");
+}
+
+.NavBarHeader{
+    font-family: 'Modak', cursive;
+    font-size:38px
+
+}
+.red{
+    color: red;
+}
