@@ -26619,12 +26619,15 @@
 	    }, {
 	        key: 'componentWillMount',
 	        value: function componentWillMount() {
-	            var token = JSON.parse(localStorage.getItem('access_token'));
-	            var LoggedIn = JSON.parse(localStorage.getItem('isLoggedIn'));
+	            var token = localStorage.getItem('access_token');
+	            var LoggedIn = localStorage.getItem('isLoggedIn');
 	            if (token && LoggedIn) {
 	                this.props.history.replace('./map');
 	            }
 	        }
+	    }, {
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {}
 	    }, {
 	        key: 'render',
 	        value: function render() {
@@ -26653,7 +26656,7 @@
 	    return HomePage;
 	}(_react.Component);
 
-	exports.default = (0, _reactRouterDom.withRouter)(HomePage);
+	exports.default = HomePage;
 
 /***/ }),
 /* 241 */

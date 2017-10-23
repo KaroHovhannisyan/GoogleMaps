@@ -7,6 +7,8 @@ import RaisedButton  from 'material-ui/RaisedButton'
 import {withRouter} from 'react-router-dom';
 
 class HomePage extends Component {
+
+
     login(){
         this.props.history.replace('/login');
     }
@@ -15,11 +17,13 @@ class HomePage extends Component {
     }
 
     componentWillMount(){
-        var token = JSON.parse(localStorage.getItem('access_token'));
-        var LoggedIn = JSON.parse(localStorage.getItem('isLoggedIn'));
+        var token = localStorage.getItem('access_token');
+        var LoggedIn =localStorage.getItem('isLoggedIn');
         if( token && LoggedIn ){
             this.props.history.replace('./map');
         }
+    }
+    componentDidMount(){
 
     }
 
@@ -41,5 +45,5 @@ class HomePage extends Component {
     }
 }
 
-export default withRouter(HomePage)
+export default HomePage
 
